@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Thumback Slot Machine</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/slot-machine.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 slot-machine-box">
+                    <div class="row">
+                        <div class="col-sm-12 slot-machine-jackpot-wrapper">
+                            <div class="jackpot-screen">
+                                <div class='message moving'>
+                                    <p>win a free coffee, tea, or espresso!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 slot-machine-reel-wrapper">
+                            <div id="reel-one" class="slot-machine-reel">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 slot-machine-reel-wrapper">
+                            <div id="reel-two" class="slot-machine-reel">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 slot-machine-reel-wrapper">
+                            <div id="reel-three" class="slot-machine-reel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 slot-machine-button-wrapper">
+                            <button id="spin-button" class="btn btn-warning">SPIN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="javascripts/underscore.min.js"></script>
+        <script src="javascripts/jquery.slotmachine.js"></script>
+<!--        <script src="javascripts/slot-machine.js"></script>-->
+        <script src="javascripts/app.js"></script>
+    </body>
+</html>

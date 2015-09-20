@@ -1,0 +1,169 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 17, 2015, 5:04:20 PM
+    Author     : rsee
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 20, 2015, 4:05:18 PM
+    Author     : rsee
+*/
+@font-face {
+  font-family: 'PressStart';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Press Start 2P"), local("PressStart2P-Regular"), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format("woff"); }
+body {
+  background: white;
+  padding: 0;
+  padding-top: 100px; }
+  body.win {
+    background: url(../images/sunRay.jpg) no-repeat center center;
+    background-size: cover; }
+
+.slot-machine-box {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  box-shadow: 0px 0px 46px -10px;
+  padding: 20px 20px;
+  background: #ECECEC; }
+  .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    min-height: 500px;
+    margin: 20px auto;
+    -moz-box-shadow: inset 0 30px 40px -10px #696868, inset 0 -30px 40px -10px #696868;
+    -webkit-box-shadow: inset 0 30px 40px -10px #696868, inset 0 -30px 40px -10px #696868;
+    box-shadow: inset 0 30px 40px -10px #696868, inset 0 -30px 40px -10px #696868; }
+    .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-one, .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-two, .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-three {
+      transition-property: background-position;
+      transition-timing-function: cubic-bezier(0.42, 0, 0.73, 1.15); }
+      .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-one.spining-1, .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-two.spining-1, .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-three.spining-1 {
+        transition-duration: 5s;
+        background-position: 50% 5250px; }
+      .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-one.spining-2, .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-two.spining-2, .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-three.spining-2 {
+        transition-duration: 5.5s;
+        background-position: 50% 5650px; }
+      .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-one.spining-3, .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-two.spining-3, .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-three.spining-3 {
+        transition-duration: 6s;
+        background-position: 50% 6050px; }
+    .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-one {
+      background: url(../images/reel1.png) repeat-y 50% 50px; }
+    .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-two {
+      background: url(../images/reel2.png) repeat-y 50% 50px; }
+    .slot-machine-box .slot-machine-reel-wrapper .slot-machine-reel#reel-three {
+      background: url(../images/reel3.png) repeat-y 50% 50px; }
+  .slot-machine-box .slot-machine-button-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .slot-machine-box .slot-machine-button-wrapper button {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 30px;
+      font-weight: bold; }
+  .slot-machine-box .slot-machine-jackpot-wrapper .jackpot-screen {
+    background: black;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    height: 115px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3); }
+    .slot-machine-box .slot-machine-jackpot-wrapper .jackpot-screen .message {
+      font-family: PressStart;
+      text-align: center; }
+      .slot-machine-box .slot-machine-jackpot-wrapper .jackpot-screen .message.moving {
+        position: absolute;
+        left: 100%;
+        -webkit-animation: slideshow 10s linear infinite;
+        -moz-animation: slideshow 10s linear infinite;
+        display: table; }
+        .slot-machine-box .slot-machine-jackpot-wrapper .jackpot-screen .message.moving p {
+          color: #FF9900;
+          -webkit-animation: neon-orange 1.5s ease-in-out infinite alternate;
+          -moz-animation: neon-orange 1.5s ease-in-out infinite alternate;
+          animation: neon-orange 1.5s ease-in-out infinite alternate; }
+      .slot-machine-box .slot-machine-jackpot-wrapper .jackpot-screen .message p {
+        color: #B6FF00;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 70px;
+        text-transform: uppercase;
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-animation: neon-green 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon-green 1.5s ease-in-out infinite alternate;
+        animation: neon-green 1.5s ease-in-out infinite alternate; }
+
+@-webkit-keyframes neon-green {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    font-size: 30px; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    font-size: 50px; } }
+@-moz-keyframes neon-green {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    font-size: 30px; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    font-size: 50px; } }
+@keyframes neon-green {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    font-size: 30px; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    font-size: 50px; } }
+@-webkit-keyframes neon-orange {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900; } }
+@-moz-keyframes neon-orange {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900; } }
+@keyframes neon-orange {
+  from {
+    color: #FF9900;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900; }
+  to {
+    color: #FFF;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900; } }
+@-moz-keyframes slideshow {
+  0% {
+    left: 100%; }
+  100% {
+    left: -100%; } }
+@keyframes slideshow {
+  0% {
+    left: 100%; }
+  100% {
+    left: -100%; } }
+@keyframes slideshow {
+  0% {
+    left: 100%; }
+  100% {
+    left: -100%; } }
+
+/*# sourceMappingURL=slot-machine.css.map */
