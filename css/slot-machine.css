@@ -24,7 +24,7 @@ and open the template in the editor.
 body {
   background: white;
   padding: 0;
-  padding-top: 100px; }
+  padding-top: 20px; }
   body.win {
     background: url(../images/sunRay.jpg) no-repeat center center;
     background-size: cover; }
