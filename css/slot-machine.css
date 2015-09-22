@@ -90,8 +90,10 @@ body {
       .slot-machine-box .slot-machine-jackpot-wrapper .jackpot-screen .message.moving {
         position: absolute;
         left: 100%;
+        width: 100%;
         -webkit-animation: slideshow 10s linear infinite;
         -moz-animation: slideshow 10s linear infinite;
+        animation: slideshow 10s linear infinite;
         display: table; }
         .slot-machine-box .slot-machine-jackpot-wrapper .jackpot-screen .message.moving p {
           color: #FF9900;
